@@ -20,7 +20,7 @@ const Contact = ({ darkMode }: ContactProps) => {
     const userMessage = formData.get("message");
 
     // 1. Your actual Gmail address
-    const myEmail = "your-email@gmail.com"; 
+    const myEmail = "rajmd1800@gmail.com"; 
 
     // 2. Default Subject Line
     const subject = encodeURIComponent(`Portfolio Inquiry from ${firstName} ${lastName}`);
