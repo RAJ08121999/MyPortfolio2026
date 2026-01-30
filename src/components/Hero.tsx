@@ -54,13 +54,12 @@ const Hero = ({darkMode}:HeroProps) => {
                             href={social.link}
                             target="_blank"
                             data-aos-delay={`${400 + index *100}`}
-                            className="transform hover:scale-110 transition-transform duration-300"
-                            >
+                            className="transform hover:scale-120 transition-transform duration-300"
+                            >   
                                 <img src={social.icon}
-                                 alt={social.alt}
-                                 className={`w-8 h-8 sm:w-10 sm:h-22 object-contain ${darkMode ? '' : 'filter brightness-75'}`}
-                                 />
-
+                                        alt={social.alt}
+                                        className={`w-10 h-10 sm:w-12 sm:h-22 object-contain ${darkMode ? '' : 'filter brightness-75'}`}
+                                />
                             </a>
                         ))
                     }
@@ -68,6 +67,18 @@ const Hero = ({darkMode}:HeroProps) => {
                     <h1 className={`title-font text-3xl sm:text-4xl lg:text-5xl mb-4 font-bold ${theme.textPrimary}`} data-aos = 'fade-up' data-aos-delay = '500'>
                         Hi, I'm Raj 
                     </h1>
+
+                    <h4
+                    className="text-2xl sm:text-3xl font-bold mb-3"
+                    style={{ 
+                        background: "linear-gradient(to right,#f97316,#f59e0b)",
+                        WebkitBackgroundClip: "text",
+                        backgroundClip: "text",
+                        color: "transparent",
+                        }}
+                    >
+                        Software Engineer
+                    </h4>
 
                     <p className={`mb-6 sm:mb-8 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
                     data-aos="fade-up"
@@ -110,7 +121,7 @@ const Hero = ({darkMode}:HeroProps) => {
                         <img
                         src={hi2}
                         alt='hi icon'
-                        className='absolute -top-4 sm:top-1 left-6 sm:-left-12 w-16 h-16 sm:w-30 sm:h-35 object-contain animate-bounce opacity-90 z-10'
+                        className='absolute -top-4 sm:top-1 left-6 sm:-left-10 w-30 h-30 sm:w-30 sm:h-35 object-contain animate-bounce opacity-90 z-10'
                         />
                     </div>
             </div>

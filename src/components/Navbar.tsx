@@ -16,6 +16,7 @@ const Navbar = ({darkMode , toggleDarkMode}:NavbarProps) => {
     const navItems = [
         { name: 'Home' , link:'#home'},
         { name: 'About' , link:'#about'},
+        { name: 'Education' , link:'#education'},
         { name: 'Skills' , link:'#skills'},
         { name: 'Projects' , link:'#projects'},
         { name: 'Experience' , link:'#experience'},

@@ -88,7 +88,7 @@ type ExperienceProps = {
           <div className="relative max-w-4xl mx-auto">
             {/* Vertical line */}
             <div
-              className="absolute left-4 sm:left-1/2 top-0 h-full w-px"
+              className="absolute left-4 sm:left-1/2 top-0 h-full w-px sm:-translate-x-1/2"
               style={{ backgroundColor: darkMode ? '#374151' : '#d1d5db' }}
             />
   
@@ -105,7 +105,17 @@ type ExperienceProps = {
               >
                 {/* Dot */}
                 <div
-                  className="absolute left-4 sm:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-linear-to-r"
+                  className="absolute
+                  top-2
+                  left-3
+                  w-3
+                  h-3
+                  rounded-full
+                  bg-linear-to-r
+                  from-orange-500
+                  to-yellow-500
+                  sm:left-1/2
+                  sm:-translate-x-1/2"
                   style={{
                     background: `linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to))`,
                   }}
